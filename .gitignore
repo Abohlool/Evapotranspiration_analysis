@@ -1,1 +1,3 @@
-old.ipynb
+outputs/*
+!outputs/.gitkeep
+*.png

@@ -2,7 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from config import theta_FC, theta_WP, root_depth_max, p_depletion
+from constants.config import theta_FC, theta_WP, root_depth_max, p_depletion
 
 
 def calc_Ks(Dr: float, TAW: float, RAW: float) -> float:

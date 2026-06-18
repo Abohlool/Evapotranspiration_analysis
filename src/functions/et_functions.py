@@ -1,9 +1,9 @@
 """FAO-56 Penman-Monteith ETo and crop coefficient functions."""
 
 import numpy as np
-from config import alpha, sigma, t_0, z_elev, Kc_ini, Kc_mid, Kc_end, tree_height
-from atmosphere import e_sat, calc_Delta, calc_gamma
-from solar_geometry import calc_R_a_interval
+from constants.config import alpha, sigma, t_0, z_elev, Kc_ini, Kc_mid, Kc_end, tree_height
+from functions.atmosphere import e_sat, calc_Delta, calc_gamma
+from functions.solar_geometry import calc_R_a_interval
 
 
 def calc_R_n(R_s: float, t: float, day: int, T: float, RH: float) -> float:

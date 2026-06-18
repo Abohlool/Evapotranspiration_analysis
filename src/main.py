@@ -6,7 +6,7 @@ import pandas as pd
 from functions.data_processor import read_and_clean_data
 from functions.et_functions import calc_R_n, calc_G, calc_ETo_interval, get_Kc, e_sat
 from functions.water_balance import calc_soil_water_balance
-from visualization import plot_results
+from visualization.visualization import plot_results
 from constants.config import t_0
 
 
@@ -87,7 +87,7 @@ def run_simulation(csv_file: str) -> pd.DataFrame:
 
 
 def main():
-    csv_file = "weather_conditions_formatted.csv"
+    csv_file = "data/weather_conditions_formatted.csv"
 
     try:
         print("=" * 70)

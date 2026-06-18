@@ -1,7 +1,7 @@
 """Solar geometry functions: declination, equation of time, hour angles."""
 
 import numpy as np
-from config import phi, L_z, L_m, G_sc, z_elev, t_0
+from constants.config import phi, L_z, L_m, G_sc, z_elev, t_0
 
 
 def calc_delta_solar(day: int) -> float:

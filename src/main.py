@@ -3,11 +3,11 @@
 import traceback
 import numpy as np
 import pandas as pd
-from data_processor import read_and_clean_data
-from et_functions import calc_R_n, calc_G, calc_ETo_interval, get_Kc, e_sat
-from water_balance import calc_soil_water_balance
+from functions.data_processor import read_and_clean_data
+from functions.et_functions import calc_R_n, calc_G, calc_ETo_interval, get_Kc, e_sat
+from functions.water_balance import calc_soil_water_balance
 from visualization import plot_results
-from config import t_0
+from constants.config import t_0
 
 
 def run_simulation(csv_file: str) -> pd.DataFrame:

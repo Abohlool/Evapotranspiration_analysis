@@ -1,3 +1,4 @@
 outputs/*
 !outputs/.gitkeep
 *.png
+__pycache__/

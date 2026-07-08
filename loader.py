@@ -2,8 +2,6 @@
 
 import pandas as pd
 import numpy as np
-import re
-from datetime import datetime
 
 def extract_number(value):
     """Extract numeric value from string with units."""

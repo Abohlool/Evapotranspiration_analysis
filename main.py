@@ -3,7 +3,6 @@
 import os
 import warnings
 import traceback
-from datetime import datetime
 
 from config import ROOT_DEPTH_MAX, P_DEPLETION
 from loader import load_and_clean

@@ -2,9 +2,7 @@
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-import numpy as np
 import pandas as pd
-from datetime import datetime
 from config import INTERVAL_HOURS, KC_MID
 from weather import e_sat
 

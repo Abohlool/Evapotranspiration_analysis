@@ -1,6 +1,5 @@
 """Export data to CSV files."""
 
-import pandas as pd
 import os
 
 def export_results(df, daily, weekly, monthly, output_dir='output/csv'):

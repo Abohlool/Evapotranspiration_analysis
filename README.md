@@ -8,9 +8,9 @@ FAO-56 Penman-Monteith implementation for evapotranspiration analysis of a pista
 ## 📍 Location
 
 | Parameter | Value |
-|-----------|-------|
+| -- | -- |
 | **Site** | Pistachio Orchard |
-| **City** | Torbat-e Heydarieh (تربت حیدریه) |
+| **City** | Torbat-e Jam (تربت جام) |
 | **Province** | Razavi Khorasan, Iran |
 | **Coordinates** | 35.2875° N, 59.2215° E |
 | **Elevation** | ~1,450 m above sea level |
@@ -18,9 +18,11 @@ FAO-56 Penman-Monteith implementation for evapotranspiration analysis of a pista
 ## 📊 Sample Output
 
 ### Evapotranspiration Analysis
+
 ![ET Analysis](pistachio_et_simulation_weather-conditions1.png)
 
 ### Summary Report
+
 ![Summary Report](pistachio_simulation_summary_weather-conditions1.png)
 
 ## 🔬 Methodology
@@ -44,7 +46,7 @@ $$K_{c\text{ mid}} = K_{c\text{ mid}(Tab)} + \left[0.04 \cdot (u_2 - 2) - 0.004 
 ### Implementation Details
 
 | Component | Method |
-|-----------|--------|
+| -- | -- |
 | **$ET_0$** | FAO-56 Penman-Monteith (adapted for sub-hourly intervals) |
 | **Crop Coefficient** | Single Kc with climate adjustment |
 | **Solar Geometry** | Full calculation (declination, equation of time, hour angle) |
@@ -58,13 +60,13 @@ $$K_{c\text{ mid}} = K_{c\text{ mid}(Tab)} + \left[0.04 \cdot (u_2 - 2) - 0.004 
 Source: FAO-56 Table 12
 
 | Growth Stage | Kc | Description |
-|-------------|-----|-------------|
+| -- | -- | -- |
 | **Initial** ($K_{c\text{ ini}}$) | 0.40 | Early season, sparse canopy |
 | **Mid-season** ($K_{c\text{ mid}}$) | 1.10 | Full canopy, peak water demand |
 | **Late-season** ($K_{c\text{ end}}$) | 0.70 | Pre-harvest, declining water use |
 
 | Physical Parameter | Value |
-|-------------------|-------|
+| -- | -- |
 | Tree height | 3.5 m |
 | Albedo (α) | 0.20 |
 | Maximum root depth | 1.5 m |
@@ -81,6 +83,7 @@ Source: FAO-56 Table 12
 - **Summary reports**: Professional formatted output images
 
 ## 📦 Requirements
+
 - Python >= 3.8
 - numpy >= 1.21.0
 - pandas >= 1.3.0
